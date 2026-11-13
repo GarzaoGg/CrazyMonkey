@@ -2,27 +2,6 @@ import pygame
 
 pygame.init()
 
-janela = pygame.display.set_mode((800, 600))
-pygame.display.set_caption("Monkey Jumper: Demo")
-
-azul = (0, 100, 255)
-preto = (0, 0, 0)
-
-clock = pygame.time.Clock()
-
-rodando = True
-
-x = 300
-y = 500
-
-velocidade = 300
-velocidade_y = 0
-
-vDash = 150
-def banana(x,y):
-    bnTO = pygame.image.load("bananaTO.png").convert_alpha()
-    bn = pygame.transform.scale(bnTO, (64, 64))
-    janela.blit(bn, (x,y))
 
 gravidade = 1200
 forca_pulo = -600
